@@ -5,6 +5,7 @@ cd tailwind-html
 touch index.html
 ```
 # Open with live server , not open index.html
+### 2nd section is not quite responsive right now
 
 stroke in svg to control color
 
