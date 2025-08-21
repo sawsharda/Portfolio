@@ -110,8 +110,8 @@ class="hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" 
         c.fillStyle = 'red'
         c.fillRect(0,0,100,100)
     </script> -->
-<div class="absolute inset-0 z-0">
-    <canvas class="w-screen aspect-[2.65/1]" id="myCanvas"></canvas>
+<div class="absolute inset-0 z-0 ">
+    <canvas class="w-screen aspect-[2.65/1] md:block lg:block hidden" id="myCanvas"></canvas>
   </div>
 
   <script>
@@ -323,7 +323,7 @@ aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fil
             <h1 class=" underline decoration-pink-400 decoration-[.12rem]  underline-offset-[6px]  text-2xl  font-['Varela'] text-center "> Latest Works </h1>
         </div>
         <div class="m-[40px] container-box ">
-        <div class=" p-4 w-[450px] h-[150px] right-1/2 border border-pink-400 solid rounded  shadow-lg shadow-indigo-900/20 bg-white/10 overflow-y-auto  ">
+        <div class=" p-4 w-[450px] h-[150px] w-16 md:w-32 lg:w-48 right-1/2 border border-pink-400 solid rounded  shadow-lg shadow-indigo-900/20 bg-white/10 overflow-y-auto  ">
             <h1 class="text-xl ">Signup</h1>
             <small>signup/login</small>
             <br>
@@ -331,7 +331,7 @@ aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fil
         </div>
         </div>
         <div class="absolute right-[50px] container-boxs">
-        <div class=" p-4 w-[450px] h-[150px] right-1/2 border border-pink-400 solid rounded  shadow-lg shadow-indigo-900/20 bg-white/10 overflow-y-auto ">
+        <div class=" p-4 w-[450px] h-[150px] w-16 md:w-32 lg:w-48 right-1/2 border border-pink-400 solid rounded  shadow-lg shadow-indigo-900/20 bg-white/10 overflow-y-auto ">
             <h1 class="text-xl ">Signup</h1>
             <small>signup/login</small>
             <br>
@@ -340,27 +340,11 @@ aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fil
         </div>
         <div 
         
-        class="vertical-line  w-[2px] absolute translate-y-8  bg-pink-400 top-0 bottom-0 left-1/2 -translate-x-1/2 "></div>
+        class="vertical-line md:block lg:block hidden w-[2px] absolute translate-y-8  bg-pink-400 top-0 bottom-0 left-1/2 -translate-x-1/2 "></div>
     </div>
     
     </section>
-    <script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
-      } else {
-        entry.target.classList.remove('animate'); // So it can re-animate
-      }
-    });
-  }, {
-    threshold: 1 // Trigger when 20% is visible
-  });
 
-  document.querySelectorAll('.container-box, .container-boxs').forEach(el => {
-    observer.observe(el);
-  });
-</script>
 
 </body>
 </html>
